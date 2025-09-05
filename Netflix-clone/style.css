@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  /* font-weight: bolder; */
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(assests/images/bg2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 110vw);
+  height: 110vh;
+  position: relative;
+}
+
+.main .box {
+  height: 110vh;
+  width: 100%;
+  opacity: 0.6;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  max-width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  height: 100px;
+  /* padding-top: 15px; */
+}
+
+nav img {
+  color: red;
+  width: 157px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  /* font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", sans-serif; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 100px);
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 20px;
+  padding: 0 30px;
+  font-weight: bolder;
+}
+
+.hero > :nth-child(1) {
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 21px;
+  text-align: center;
+}
+
+.seperation {
+  height: 8px;
+  background-color: #232323;
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  color: white;
+  /* background-color: rgba(52, 52, 52, 0.58); */
+}
+
+.btn-lang {
+  background: transparent;
+  background-clip: padding-box;
+  border-radius: 4px;
+  padding: 5px 27px;
+  font-size: 13px;
+  font-weight: 400;
+  border-width: 2px;
+  border: 2px solid white;
+  border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 12px 24px;
+  font-size: 26px;
+  border-radius: 5px;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  padding: 4px 7px;
+  border-radius: 5px;
+}
+
+.main input {
+  padding: 13px 190px 18px 15px;
+  font-size: 17px;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  color: white;
+  margin: auto;
+  font-weight: bolder;
+}
+
+.secImg {
+  position: relative;
+  height: 550px;
+}
+
+.secImg img {
+  width: 534px;
+  position: relative;
+  z-index: 10;
+  right: -70px;
+  top: 60px;
+}
+
+.secImg video {
+  position: absolute;
+  top: 137px;
+  right: 7px;
+  left: 146px;
+  width: -webkit-fill-available;
+}
+
+.first > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.first > div :nth-child(1) {
+  font-size: 51px;
+  font-weight: bolder;
+}
+
+.first > div :nth-child(2) {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.second > div :nth-child(1) {
+  right: 0px;
+}
+
+.third div :nth-child(2) {
+  top: 90px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 51px;
+  padding: 23px 23px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bolder;
+}
+
+.faq {
+  color: white;
+  padding: 34px;
+}
+
+.faqreal {
+  font-weight: bolder;
+}
+
+.faqbox {
+  background-color: #2d2d2d;
+  margin: 10px auto;
+  display: flex;
+  max-width: 73vw;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.faqbox svg {
+  color: white;
+  padding: 10px;
+}
+
+.faqbox:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+footer {
+  color: white;
+  max-width: 75vw;
+  margin: auto;
+  padding: 34px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+.questions {
+  padding: 23px 0;
+  color: #b3b3b3;
+}
+.questions a {
+  color: #b3b3b3;
+  font-size: 17px;
+}
+
+.footer a {
+  font-size: 15px;
+  color: #b3b3b3;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
