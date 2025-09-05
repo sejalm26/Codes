@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sejal - Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sejal Mestry</h1>
+        <h2>Web Developer and Designer</h2>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my work and skills as a web developer and designer.</p>
+        </section>
+
+        <section id="about">
+            <h2>About me</h2>
+            <article>
+                <h3>Who I Am</h3>
+                <p>
+                    Hello! My name is <strong>Sejal Mestry</strong>. I am a
+                    <em>Web Developer</em> with a passion for creating beautiful and
+                    functional websites. I have experience in building user-friendly and
+                    responsive websites.
+                </p>
+                <p>
+                    My journey in web development started with a curiosity about how
+                    websites work, and it has grown into a full-fledged career.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel modi
+                    accusantium dicta aspernatur, voluptates perferendis ipsum odit
+                    tenetur obcaecati recusandae! Id debitis laborum porro vitae?
+                </p>
+            </article>
+            <img src="https://wallpapers.com/images/hd/anime-girl-profile-pictures-ri13vnr0adoq58sp.jpg"
+                alt="Profile Picture of Sejal" width="300" height="200" />
+
+            <p>
+                <a href="resume.pdf" target="_blank">Download My Resume</a>
+            </p>
+        </section>
+
+        <section id="skills">
+            <h3>My Skills</h3>
+            <h3>
+                Technical Skills
+            </h3>
+            <h4>
+                Frontend Skills
+            </h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript(ES6+)</li>
+                <li>React.js</li>
+            </ul>
+            <h4>
+                Backend Skills
+            </h4>
+            <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+            </ul>
+
+            <h3>My Development Process</h3>
+            <ol>
+                <li>Understanding website requirements</li>
+                <li>Planning</li>
+                <li>Designing UI/UX</li>
+                <li>Testing and debugging</li>
+                <li>Deloyment and maintenance</li>
+            </ol>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <table border="1">
+                <caption>Project Portfolio</caption>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Technology Used</th>
+                        <th>Completion Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Benio</td>
+                        <td>Python (PyCharm IDE)</td>
+                        <td>2023</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Immune Kavach</td>
+                        <td>Andriod Studio, Java, SQLite</td>
+                        <td>2023</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Chef2U</td>
+                        <td>HTML, CSS, Node.js</td>
+                        <td>2024</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>LuminoLink</td>
+                        <td>Arduino, LEDs, Optical Receiver</td>
+                        <td>2024</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Project Details</legend>
+
+                    <label for="type">Project Type:</label>
+                    <select name="type" id="type">
+                        <option>Web Design</option>
+                        <option>Web Development</option>
+                        <option>SEO</option>
+                        <option>Other</option>
+                    </select><br><br>
+
+                    <p>Budget Range</p>
+                    <input type="radio" id="budget1" name="budget" value="500-1000">
+                    <label for="budget1">$500-1000</label>
+
+                    <input type="radio" id="budget2" name="budget" value="1000-5000">
+                    <label for="budget2">$1000-5000</label>
+
+                    <input type="radio" id="budget3" name="budget" value="5000+">
+                    <label for="budget3">$5000+</label>
+
+                    <p>Services Needed:</p>
+                    <input type="checkbox" id="service1" name="services" value="design">
+                    <label for="service1">Design</label><br>
+
+                    <input type="checkbox" id="service2" name="services" value="development">
+                    <label for="service2">Development</label><br>
+
+                    <input type="checkbox" id="service3" name="services" value="seo">
+                    <label for="service3">SEO</label><br><br>
+
+                    <label for="desc">Project Description:</label><br>
+                    <textarea id="desc" name="desc" rows="5" cols="40"
+                        placeholder="Describe your project here..."></textarea><br><br>
+
+                    <!-- Range -->
+                    <label for="timeline">Project Timeline (1–12 months):</label>
+<input type="range" id="timeline" name="timeline" min="1" max="12" value="6" oninput="timelineOutput.value = this.value">
+<output id="timelineOutput">6</output> months
+
+                    <!-- Date -->
+                    <label for="startdate">Preferred Start Date:</label>
+                    <input type="date" id="startdate" name="startdate"><br><br>
+                </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+
+    </main>
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+/* 🎨 Color Palette */
+:root {
+  --primary: #1e3a8a;       /* Dark Blue */
+  --secondary: #2563eb;     /* Bright Blue */
+  --accent: #f59e0b;        /* Orange */
+  --light: #f9fafb;         /* Very Light Grey */
+  --dark: #111827;          /* Almost Black */
+  --white: #ffffff;
+}
+
+/* 🌍 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+  padding: 0;
+}
+
+/* 🏷️ General Headings */
+h1, h2, h3, h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* 🔝 Header */
+header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 5px solid var(--secondary);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+/* 📌 Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+/* 📂 Sections */
+section {
+  background: var(--white);
+  margin: 40px auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+section h2, section h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+/* 🖼️ About Section */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#about img {
+  border-radius: 10px;
+  max-width: 250px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 📊 Skills Section */
+#skills ul, #skills ol {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+#skills li {
+  margin-bottom: 6px;
+}
+
+/* 📋 Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+tbody tr:nth-child(even) {
+  background: #f3f4f6;
+}
+
+tbody tr:hover {
+  background: #e0f2fe;
+  transition: 0.3s ease;
+}
+
+/* 📬 Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+fieldset {
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+label {
+  display: block;
+  margin: 8px 0 4px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--secondary);
+  outline: none;
+}
+
+input[type="submit"], input[type="reset"] {
+  width: auto;
+  padding: 10px 20px;
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background: var(--accent);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    max-width: 180px;
+  }
+}
